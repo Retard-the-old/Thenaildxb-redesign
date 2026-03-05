@@ -1,0 +1,36 @@
+THE NAIL DXB — FRAMER DEPLOYMENT INSTRUCTIONS
+==============================================
+
+FILES IN THIS FOLDER:
+- thenaildxb-optimised.html   → The website HTML (75KB, fully optimised)
+- 12 x image files            → All site images, extracted and compressed
+
+STEPS TO DEPLOY ON FRAMER:
+1. Create a new Framer project
+2. Upload all 12 image files via Framer's asset manager
+3. Each image will get a CDN URL (e.g. https://framer.com/images/xyz.jpg)
+4. In the HTML file, find and replace each placeholder path with the Framer URL:
+
+   /images/logo.png              → logo (nav + footer)
+   /images/hero-main.jpg         → main hero image
+   /images/hero-secondary.jpg    → secondary hero image
+   /images/service-nails.jpg     → nails service card
+   /images/service-lashes.jpg    → lashes service card
+   /images/service-brows.jpg     → brows service card
+   /images/salon-interior-1.jpg  → salon carousel image 1
+   /images/salon-interior-2.jpg  → salon carousel image 2
+   /images/salon-station.jpg     → salon carousel image 3
+   /images/salon-supplies.jpg    → salon carousel image 4
+   /images/ig-avatar.png         → Instagram profile avatar
+   /images/footer-logo.png       → footer logo
+
+5. Paste the updated HTML into a Framer Code Component
+6. Connect custom domain (thenaildxb.com) and publish
+
+OPTIMISATIONS ALREADY APPLIED:
+- All images extracted from HTML (3,324KB → 75KB)
+- Hero image preloaded for fast first paint
+- Google Fonts set to non-blocking load
+- Lazy loading on all below-fold images
+- Animations GPU-optimised
+
